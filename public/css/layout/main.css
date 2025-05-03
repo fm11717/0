@@ -1,0 +1,890 @@
+:root
+{
+    /* ==============================================>>> {{{ 1600px }}} <<<==================================== */
+    /* ---------------------------------------------------------------- {{{ الألوان }}} <<<  */
+    /*
+        Border
+    */
+    --border-primary: 1px solid #ddd;
+
+
+
+    /*
+        Box-Shadow
+    */
+    --box-primary-color: rgba(0, 0, 0, 0.1);
+    --box-primary-width: 0px 1px 5px;
+    /* ---------------------------------------------------------------- {{{ الألوان }}} <<<  */
+
+
+
+
+
+
+
+
+
+    /* ---------------------------------------------------------------- {{{ المسافات }}} <<<  */
+    /* 
+        Border-radius
+    */
+    --radius-4: 0.4rem;
+    
+
+
+    /*
+        Width
+    */
+    --width-container: 80%;
+    /* ---------------------------------------------------------------- {{{ المسافات }}} <<<  */
+
+
+
+
+
+
+
+
+
+    /* ---------------------------------------------------------------- {{{ المفردات }}} <<<  */
+    /*
+        Z-index
+    */
+    --z-index--1: -1;
+    --z-index--2: -2;
+    --z-index--3: -3;
+    --z-index-1: 1;
+    --z-index-2: 2;
+    --z-index-3: 3;
+    --z-index-4: 4;
+
+
+
+    /*
+        Display
+    */
+    --none: none;
+    /* ---------------------------------------------------------------- {{{ المفردات }}} <<<  */
+    /* ==============================================>>> {{{ 1600px }}} <<<==================================== */
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    /* ==============================================>>> {{{ 1280px }}} <<<==================================== */
+    /* @media (max-width: 1200px) {
+    } */
+    /* ==============================================>>> {{{ 1280px }}} <<<==================================== */
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    /* ==============================================>>> {{{ 768px }}} <<<==================================== */
+    @media (max-width: 768px) {
+        /* ---------------------------------------------------------------- {{{ المسافات }}} <<<  */
+        /*
+            Width
+        */
+        --width-container: 90%;
+        /* ---------------------------------------------------------------- {{{ المسافات }}} <<<  */
+
+
+
+
+
+
+
+
+
+        /* ---------------------------------------------------------------- {{{ المفردات }}} <<<  */
+        /*
+            Display
+        */
+        --none: flex;
+        /* ---------------------------------------------------------------- {{{ المفردات }}} <<<  */
+    }
+    /* ==============================================>>> {{{ 768px }}} <<<==================================== */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> {{{ أشكال }}} <<<==================================== */
+.money-line
+{
+    color: var(--color-text);
+    position: relative;
+}
+.money-line::after
+{
+    content: '';
+    background: #8d8d8d;
+
+    width: 100%;
+    height: 2px;
+
+    display: block;
+
+    position: absolute;
+    top: var(--size-h4);
+    left: 0;
+}
+/* ==============================================>>> {{{ أشكال }}} <<<==================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> {{{ الأساس }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ HTML..... }}} <<<  */
+html
+{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*
+{
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    text-decoration: none;
+
+    transition: 200ms all ease;
+}
+body, header, footer, section, .container, nav, .foot,
+.container-cards, .card, .cart, .container-cart, .total,
+details, summary, .container-details,
+.container-search,
+.double,
+a,
+.notification-absolute
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header .container, header nav, header a, footer .container,
+summary,
+.cart, .container-cart, .total,
+.container-search
+{
+    flex-direction: row;
+}
+header .container, footer .container,
+.container-cards, .card, .cart, .container-cart
+{
+    justify-content: space-between;
+}
+/* ---------------------------------------------------------------- {{{ HTML..... }}} <<<  */
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Body..... }}} <<<  */
+body
+{
+    color: var(--color-text);
+    background: var(--background-body);
+
+    width: 100%;
+}
+header
+{
+    background: var(--background-header);
+
+    width: 100%;
+    height: var(--height-header);
+
+    position: relative;
+
+
+
+    nav
+    {
+        @media (max-width: 768px) {
+            background: var(--background-header);
+
+            width: 100%;
+            padding: var(--padding-nav) 0;
+            
+            flex-direction: column;
+            
+            position: absolute;
+            right: 0;
+            top: 100%;
+            display: none;
+            z-index: var(--z-index-3);
+        }
+        
+
+
+        .container-search
+        {
+            padding: 0 var(--padding-nav);
+
+
+            
+            @media (max-width: 768px) {
+                padding: var(--padding-nav) 0;
+            }
+        }
+        a
+        {
+            color: var(--color-a);
+            padding: 0 var(--padding-nav);
+            white-space: nowrap;
+
+
+
+            @media (max-width: 768px) {
+                padding: calc(var(--padding-nav) / 2) 0;
+            }
+        }
+        a:last-child
+        {
+            padding: 0 var(--padding-nav) 0 0;
+
+
+            @media (max-width: 768px) {
+                padding: calc(var(--padding-nav) / 2) 0;
+            }
+        }
+    }
+
+
+
+    .logo-text
+    {
+        color: var(--color-light);
+        
+    }
+}
+footer
+{
+    width: 100%;
+    padding: var(--padding-footer);
+    margin: var(--margin-section) 0 0 0;
+
+    position: relative;
+
+
+
+
+
+    .container
+    {
+        align-items: start;
+
+
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+
+
+        .foot
+        {
+            height: 100%;
+            width: var(--width-foot);
+
+            align-items: start;
+            text-align: start;
+
+
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+
+
+            
+            h3, h4, h6
+            {
+                color: var(--color-text-pro);
+            }
+        }
+        .foot:first-child
+        {
+            width: 40%;
+
+
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    } 
+}
+section
+{
+    width: 100%;
+    margin: var(--margin-section) 0;
+}
+.container
+{
+    width: var(--width-container);
+    height: 100%;
+}
+/* ---------------------------------------------------------------- {{{ Body..... }}} <<<  */
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Groups }}} <<<  */
+.container-cards
+{
+    height: 100%;
+    width: 100%;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+    .card
+    {
+        box-shadow: var(--box-primary-width) var(--box-primary-color);
+        border: var(--border-primary);
+
+        width: var(--width-card);
+        padding: var(--padding-card);
+
+
+
+        .double
+        {
+            align-items: start;
+        }
+
+
+
+        .card-name
+        {
+            color: var(--color-text-pro);
+        }
+        .card-icon
+        {
+            color: var(--color-primary);
+        }
+    }
+}
+
+
+
+.cart
+{
+    border: var(--border-primary);
+    box-shadow: var(--box-primary-width) var(--box-primary-color);
+
+    border-radius: var(--radius-4);
+    width: 100%;
+
+
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+
+
+    .container-cart
+    {
+        width: 100%;
+
+
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: start;
+        }
+
+
+
+        .double
+        {
+            align-items: start;
+            @media (max-width: 768px) {
+                width: 100%;
+
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+
+
+
+    img
+    {
+        padding-left: 7rem;
+
+
+
+        @media (max-width: 768px) {
+            padding-left: 0;
+        }
+    }
+}
+.total
+{
+    border: var(--border-primary);
+    box-shadow: var(--box-primary-width) var(--box-primary-color);
+
+    border-radius: var(--radius-4);
+    width: 100%;
+
+    justify-content: end;
+
+
+
+    @media (max-width: 768px) {
+        width: 100%;
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+
+details
+{
+    position: relative;
+
+    z-index: var(--z-index-3);
+    
+
+
+    .container-details
+    {
+        border: var(--border-primary);
+
+        width: 100%;
+
+        position: absolute;
+        right: 0;
+        top: 100%;
+
+
+
+        a
+        {
+            background: var(--background-body);
+
+            width: 100%;
+            padding: calc(var(--padding-nav) / 2) 0;
+        }
+        a:not(:last-child)
+        {
+            border-bottom: var(--border-primary);
+        }
+    }
+
+
+
+    summary
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+.container-search
+{
+    height: var(--height-input);
+
+
+
+    input
+    {
+        height: 100%;
+        border-top-right-radius: unset !important;
+        border-bottom-right-radius: unset !important;
+    }
+    .icon-search
+    {
+        background: var(--color-a);
+
+        height: 100%;
+        width: 3rem;
+        border-top-left-radius: unset !important;
+        border-bottom-left-radius: unset !important;
+    }
+}
+
+
+
+input
+{
+    border: var(--border-primary);
+    border-radius: var(--radius-4);
+}
+/* ---------------------------------------------------------------- {{{ Groups }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Elements }}} <<<  */
+.title
+{
+    width: 100%;
+}
+h1
+{
+    font-size: var(--size-h1);
+    font-weight: var(--weight-h1);
+}
+h2
+{
+    font-size: var(--size-h2);
+    font-weight: var(--weight-h2);
+}
+h3
+{
+    color: var(--color-text-pro);
+    font-size: var(--size-h3);
+    font-weight: var(--weight-h3);
+}
+h4
+{
+    color: var(--color-text-pro);
+    font-size: var(--size-h4);
+    font-weight: var(--weight-h4);
+}
+h5
+{
+    color: var(--color-text-pro);
+    font-size: var(--size-h5);
+    font-weight: var(--weight-h5);
+}
+h6, nav a, header summary, .button-pro
+{
+    color: var(--color-text-pro);
+    font-size: var(--size-h6);
+    font-weight: var(--weight-h6);
+}
+p
+{
+    color: var(--color-text);
+    font-size: var(--size-p);
+    font-weight: var(--weight-p);
+}
+a, #closeNav
+{
+    color: var(--color-a);
+    font-size: var(--size-p);
+    font-weight: var(--weight-p);
+}
+
+
+
+
+
+
+
+button, .button
+{
+    color: var(--color-white);
+    background: var(--color-a);
+    border: unset;
+    border-radius: var(--radius-4);
+    
+    white-space: nowrap;
+    cursor: pointer;
+
+
+    *
+    {
+        color: var(--color-white);
+    }
+}
+.button-pro
+{
+    padding: var(--padding-button);
+}
+/* ---------------------------------------------------------------- {{{ Elements }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Hover }}} <<<  */
+a:hover
+{
+    color: var(--color-light);
+
+
+
+    .notification-absolute
+    {
+        background: var(--color-light);
+    }
+}
+
+
+
+button:hover, .button:hover, .icon-search:hover
+{
+    color: var(--color-white);
+    background: var(--color-light);
+}
+.container-search input:focus
+{
+    outline: unset;
+    box-shadow: 0px 2px 12px var(--box-light);
+}
+/* ---------------------------------------------------------------- {{{ Hover }}} <<<  */
+/* ==============================================>>> {{{ الأساس }}} <<<==================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> {{{ الاختصارات }}} <<<==================================== */
+.notification-relative
+{
+    position: relative;
+    
+    
+    
+    .notification-absolute
+    {
+        color: var(--color-white);
+        background: var(--color-a);
+        
+        font-size: 0.9rem;
+        
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        
+        position: absolute;
+        top: -0.8rem;
+        left: -0.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Hover }}} <<<  */
+.magnetic:hover {
+    transform: scale(1.05) translateY(-1px);
+}
+/* ---------------------------------------------------------------- {{{ Hover }}} <<<  */
+/* ==============================================>>> {{{ الاختصارات }}} <<<==================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> {{{ جافاسكربت }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ Elements }}} <<<  */
+#closeNav
+{
+    z-index: var(--z-index-3);
+    
+    display: var(--none);
+}
+/* ---------------------------------------------------------------- {{{ Elements }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Hover }}} <<<  */
+.background_light_js:hover
+{
+    @media (max-width: 768px) {
+        background: var(--color-a);
+    }
+}
+/* ---------------------------------------------------------------- {{{ Hover }}} <<<  */
+/* ==============================================>>> {{{ جافاسكربت }}} <<<==================================== */

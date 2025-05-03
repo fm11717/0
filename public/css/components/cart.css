@@ -1,0 +1,26 @@
+.section-cart-1
+{
+    .container
+    {
+        gap: 3rem;
+    }
+
+
+
+    h1
+    {
+        text-align: start;
+        color: var(--color-text-pro) !important;
+    }
+
+
+
+    .cart, .total
+    {
+        padding: 1rem 2.3rem;
+    }
+    .total
+    {
+        gap: 1rem;
+    }
+}

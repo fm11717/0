@@ -1,0 +1,738 @@
+:root
+{
+    /* ==============================================>>> {{{ 1600px }}} <<<==================================== */
+    /* ---------------------------------------------------------------- {{{ الألوان }}} <<<  */
+    /* 
+        Color
+    */
+    --color-primary: #ff4c85;
+    --color-text-pro: rgba(0, 0, 0, 0.8);
+    --color-text: #828282;
+
+    --color-light: hsl(204.92deg 100% 71.33%);
+    --color-a: #0e8ce4;
+    
+    --color-white: #fff;
+    --color-red: #df3b3b;
+    
+    
+
+    /* 
+        Background
+    */
+    --background-body: #fff;
+    --background-header: #fff;
+    --background-feature: rgba(203, 225, 238, 0.3);
+
+
+
+    /*
+        Border, Box-shadow
+    */
+    --box-light: rgb(3 0 255 / 25%);
+    /* ---------------------------------------------------------------- {{{ الألوان }}} <<<  */
+
+
+
+
+
+    
+
+
+
+    /* ---------------------------------------------------------------- {{{ الخطوط }}} <<<  */
+    /* 
+        Font-family
+    */
+    --tajawal: "Tajawal", sans-serif;
+    --notonaskh: "Noto Naskh Arabic", serif;
+    --messiri: "El Messiri", sans-serif;
+    --notoKufi: "Noto Kufi Arabic", sans-serif;
+    --ruqaa: "Aref Ruqaa", serif;
+    --kufi: "Reem Kufi", sans-serif;
+
+    --rubik: "Rubik", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --playwrite: "Playwrite ES Deco Guides", cursive;
+    
+
+
+    /* 
+        Font-size
+    */
+    --size-h1: 2rem;
+    --size-h2: ;
+    --size-h3: 2.4rem;
+    --size-h4: 1.5rem;
+    --size-h5: 1.2rem;
+    --size-h6: 1.05rem;
+    --size-p: 0.95rem;
+
+
+
+    /* 
+        Font-weight
+    */
+    --weight-h1: 600;
+    --weight-h2: 600;
+    --weight-h3: 600;
+    --weight-h4: 500;
+    --weight-h5: 500;
+    --weight-h6: 500;
+    --weight-p: 400;
+    /* ---------------------------------------------------------------- {{{ الخطوط }}} <<<  */
+
+
+
+
+
+
+
+
+
+    /* ---------------------------------------------------------------- {{{ المسافات }}} <<<  */
+    /* 
+        Width
+    */
+    --width-foot: 14rem;
+    --width-card: 25%;
+
+
+
+    /* 
+        Height
+    */
+    --height-header: 4rem;
+    --height-input: 2.6rem;
+
+
+
+    /* 
+        Padding
+    */
+    --padding-footer: 3rem 2rem;
+    --padding-card: 1rem 2rem;
+    --padding-button: 0.4rem 1.5rem;
+    
+    
+    
+    /* 
+        Margin
+    */
+    --margin-section: 2.2rem;
+    /* ---------------------------------------------------------------- {{{ المسافات }}} <<<  */
+    /* ==============================================>>> {{{ 1600px }}} <<<==================================== */
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    /* ==============================================>>> {{{ 1280px }}} <<<==================================== */
+
+    /* ==============================================>>> {{{ 1280px }}} <<<==================================== */
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    /* ==============================================>>> {{{ 768px }}} <<<==================================== */
+    @media (max-width: 768px) {
+        /* ---------------------------------------------------------------- {{{ الخطوط }}} <<<  */
+        --size-h1: 1.8rem;
+        --size-h2: ;
+        --size-h3: 2.2rem;
+        --size-h4: 1.5rem;
+        --size-h5: 1.1rem;
+        --size-h6: 1.05rem;
+        --size-p: 0.95rem;
+        /* ---------------------------------------------------------------- {{{ الخطوط }}} <<<  */
+
+
+
+
+
+
+
+
+
+        /* ---------------------------------------------------------------- {{{ المسافات }}} <<<  */
+        /* 
+            Width
+        */
+        --width-card: 100%;
+
+
+
+        /* 
+            Height
+        */
+        --height-header: 3.5rem;
+        --height-input: 4.5rem;
+        /* ---------------------------------------------------------------- {{{ المسافات }}} <<<  */
+
+
+
+
+
+
+
+
+        /* ---------------------------------------------------------------- {{{ المفردات }}} <<<  */
+        /*
+            Display
+        */
+        /* ---------------------------------------------------------------- {{{ المفردات }}} <<<  */
+        /* ==============================================>>> {{{ 768px }}} <<<==================================== */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> {{{ الأساس }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ HTML..... }}} <<<  */
+*
+{
+    direction: rtl;
+    font-family: var(--tajawal);
+}
+/* ---------------------------------------------------------------- {{{ HTML..... }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Body..... }}} <<<  */
+:root
+{
+    --padding-nav: 1rem;
+}
+body
+{
+    line-height: 2;
+}
+header
+{
+    nav
+    {
+        @media (max-width: 768px) {
+            animation: Opacity 0.6s ease-in-out;
+        }
+
+
+
+        .container-search
+        {
+            @media (max-width: 768px) {
+                border-bottom: var(--border-primary);
+
+                width: 100%;
+            }
+        }
+        a
+        {
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+        a:not(:last-child)
+        {
+            @media (max-width: 768px) {
+                border-bottom: var(--border-primary);
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- {{{ Body..... }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Groups }}} <<<  */
+.container-cards
+{
+    row-gap: 2rem;
+}
+
+
+
+input
+{
+    direction: ltr;
+
+    padding: 0 1rem;
+}
+/* ---------------------------------------------------------------- {{{ Groups }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Elements }}} <<<  */
+.title-1
+{
+    color: hsl(248, 16%, 71%);
+
+    font-family: var(--messiri);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+
+    text-align: start;
+
+
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+/* ---------------------------------------------------------------- {{{ Elements }}} <<<  */
+/* ==============================================>>> {{{ الأساس }}} <<<==================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> {{{ التحريك }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ Move }}} <<<  */
+/*
+    ظهور من جاني لآخر من شفافية إلى وضوح
+*/
+.SlideDown
+{
+    animation: SlideDown 1s ease-out;
+}
+.SlideDownInfinite
+{
+    animation: SlideDown 1s linear infinite;
+}
+@keyframes SlideDown
+{
+    from
+    {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.SlideUp
+{
+    animation: SlideUp 1s ease-out;
+}
+.SlideUpInfinite
+{
+    animation: SlideUp 1s linear infinite;
+}
+@keyframes SlideUp
+{
+    from
+    {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.SlideLeft
+{
+    animation: SlideLeft 1s ease-out;
+}
+.SlideLeftIninfinite
+{
+    animation: SlideLeftIn 1s linear infinite;
+}
+@keyframes SlideLeft
+{
+    from
+    {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.SlideRight
+{
+    animation: SlideRight 1s ease-out;
+}
+.SlideRightInfinite
+{
+    animation: SlideRight 1s linear infinite;
+}
+@keyframes SlideRight
+{
+    from
+    {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* ---------------------------------------------------------------- {{{ Move }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Shake }}} <<<  */
+/*
+    نبض
+*/
+.Pulse
+{
+    animation: Pulse 2s ease-in-out;
+}
+.PulseInfinite
+{
+    animation: Pulse 2s linear infinite;
+}
+@keyframes Pulse
+{
+    0%, 100%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.1);
+    }
+}
+
+
+
+/*
+    دوران رأسي
+*/
+.Rotate
+{
+    animation: Rotate 2s ease-in-out;
+}
+.RotateInfinite
+{
+    animation: Rotate 2s linear infinite;
+}
+@keyframes Rotate
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/*
+    دوران أفقي
+*/
+.Flip
+{
+    animation: Flip 1s ease-in-out;
+}
+.FlipInfinite
+{
+    animation: Flip 2s linear infinite;
+}
+@keyframes Flip
+{
+    from
+    {
+        transform: rotateY(0deg);
+    }
+    to
+    {
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+/*
+    قفز
+*/
+.Bounce
+{
+    animation: Bounce 1s ease-in-out;
+}
+.BounceInfinite
+{
+    animation: Bounce 2s linear infinite;
+}
+@keyframes Bounce
+{
+    0%, 20%, 50%, 80%, 100%
+    {
+        transform: translateY(0);
+    }
+    40%
+    {
+        transform: translateY(-25px);
+    }
+    60%
+    {
+        transform: translateY(-15px);
+    }
+}
+
+
+
+/*
+    اهتزاز
+*/
+.Shake
+{
+    animation: Shake 0.5s ease-in-out;
+}
+.ShakeInfinite
+{
+    animation: Shake 0.5s linear infinite;
+}
+@keyframes Shake
+{
+    0%
+    {
+        transform: translateX(0);
+    }
+    25%
+    {
+        transform: translateX(-10px);
+    }
+    50%
+    {
+        transform: translateX(10px);
+    }
+    75%
+    {
+        transform: translateX(-10px);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+/* ---------------------------------------------------------------- {{{ Shake }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Zoom }}} <<<  */
+/*
+    ارتداد عند الدخول
+*/
+.BounceIn
+{
+    animation: BounceIn 0.8s ease-out;
+}
+.BounceInInfinite
+{
+    animation: BounceIn 0.8s infinite;
+}
+@keyframes BounceIn 
+{
+    0%
+    {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60%
+    {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100%
+    {
+      transform: scale(1);
+    }
+}
+
+
+
+/*
+    تكبير
+*/
+.ZoomIn
+{
+    animation: ZoomIn 1s ease-out;
+}
+.ZoomInInfinite
+{
+    animation: ZoomIn 1s linear infinite;
+}
+@keyframes zoomIn
+{
+    from
+    {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* ---------------------------------------------------------------- {{{ Zoom }}} <<<  */
+
+
+
+/* ---------------------------------------------------------------- {{{ Filter }}} <<<  */
+/*
+    شفافية إلى وضوح
+*/
+.Opacity
+{
+    animation: Opacity 2s ease-in-out;
+}
+.OpacityInfinite
+{
+    animation: Opacity 2s linear infinite;
+}
+@keyframes Opacity
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+/* ---------------------------------------------------------------- {{{ Filter }}} <<<  */
+/* ==============================================>>> {{{ التحريك }}} <<<==================================== */
