@@ -1,0 +1,80 @@
+/* ---------------------------------------------------------------- {{{ Signup-1 => 2-2 }}} <<< */
+.section-signup-1
+{
+    background: hsl(205deg 28.18% 19.77%);
+
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+
+
+    .container
+    {
+        width: 25rem;
+
+
+
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+
+
+
+        form
+        {
+            background: var(--color-white);
+
+            padding: 2rem 2.5rem;
+
+
+
+            .container-form
+            {
+                flex-direction: row;
+                gap: 0;
+
+
+
+                label
+                {
+                    color: var(--color-white);
+                    background: hsl(205deg 28.18% 19.77%);
+
+                    height: 100%;
+                    width: 3rem;
+                }
+                input
+                {
+                    padding: 0.5rem;
+                }
+                input, button
+                {
+                    border-radius: unset;
+                }
+            }
+        }
+    }
+
+
+
+    h4, .container-form:last-child
+    {
+        margin: 0.5rem 0;
+    }
+    h4
+    {
+        b
+        {
+            color: var(--color-light);
+        }
+    }
+    p
+    {
+        a
+        {
+            display: inline-block;
+        }
+    }
+}
+/* ---------------------------------------------------------------- {{{ Signup-1 => 2-2 }}} <<< */

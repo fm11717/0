@@ -1,0 +1,133 @@
+/* ---------------------------------------------------------------- {{{ Product-1 => 1-2 }}} <<< */
+.section-product-1
+{
+    height: 38.45vw;
+
+
+
+    @media (max-width: 768px) {
+        height: unset;
+    }
+
+
+
+    .container
+    {
+
+        flex-direction: row-reverse;
+        gap: 4rem;
+
+
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+
+
+        .producut-images
+        {
+            width: 60%;
+
+            flex-direction: row;
+            gap: 1rem;
+
+
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+
+
+            .container-producut-images
+            {
+                gap: 1rem;
+
+
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    flex-direction: row;
+                }
+            }
+            .container-producut-images div, .image-pro
+            {
+                border: var(--border-primary);
+                box-shadow: var(--box-primary-width) var(--box-primary-color);
+
+                height: 12vw;
+                width: 12vw;
+                padding: 1rem 1rem;
+
+
+
+                @media (max-width: 768px) {
+                    height: 7rem;
+                    width: 100%;
+
+                    justify-content: space-between;
+                }
+            }
+            .image-pro
+            {
+                height: 100%;
+                width: 100%;
+
+
+
+                
+
+                @media (max-width: 768px) {
+                    height: 20rem;
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+        .producut-content
+        {
+            width: 40%;
+
+            align-items: start;
+
+
+            .double
+            {
+                width: 100%;
+
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+
+
+
+            p
+            {
+                text-align: start;
+            }
+            h3
+            {
+                width: 100%;
+
+                text-align: left;
+            }
+            input
+            {
+                width: 5rem;
+                padding: 0.5rem;
+
+
+                font-size: var(--size-h6);
+            }
+        }
+    }
+}
+.container-producut-images div:hover
+{
+    cursor: pointer;
+    box-shadow: var(--box-primary-width) var(--box-primary-color-hover) !important;
+    /* border-color: var(--color-primary); */
+}
+/* ---------------------------------------------------------------- {{{ Product-1 => 1-2 }}} <<< */

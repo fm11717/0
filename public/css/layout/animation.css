@@ -1,0 +1,412 @@
+/* ==============================================>>> {{{ التحريك }}} <<<==================================== */
+/* ---------------------------------------------------------------- {{{ Move }}} <<<  */
+/*
+    ظهور من جاني لآخر من شفافية إلى وضوح
+*/
+.SlideDown
+{
+    animation: SlideDown 1s ease-out;
+}
+.SlideDownInfinite
+{
+    animation: SlideDown 1s linear infinite;
+}
+@keyframes SlideDown
+{
+    from
+    {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.SlideUp
+{
+    animation: SlideUp 1s ease-out;
+}
+.SlideUpInfinite
+{
+    animation: SlideUp 1s linear infinite;
+}
+@keyframes SlideUp
+{
+    from
+    {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.SlideLeft
+{
+    animation: SlideLeft 1s ease-out;
+}
+.SlideLeftIninfinite
+{
+    animation: SlideLeftIn 1s linear infinite;
+}
+@keyframes SlideLeft
+{
+    from
+    {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.SlideRight
+{
+    animation: SlideRight 1s ease-out;
+}
+.SlideRightInfinite
+{
+    animation: SlideRight 1s linear infinite;
+}
+@keyframes SlideRight
+{
+    from
+    {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* ---------------------------------------------------------------- {{{ Move }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Shake }}} <<<  */
+/*
+    نبض
+*/
+.Pulse
+{
+    animation: Pulse 2s ease-in-out;
+}
+.PulseInfinite
+{
+    animation: Pulse 2s linear infinite;
+}
+@keyframes Pulse
+{
+    0%, 100%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.1);
+    }
+}
+
+
+
+/*
+    تمطط
+*/
+.Rubber
+{
+    animation: Rubber 2s linear ease-in-out;
+}
+.RubberInfinite
+{
+    animation: Rubber 2s linear infinite;
+}
+@keyframes Rubber
+{
+    from 
+    {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30%
+    {
+    transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40%
+    {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50%
+    {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65%
+    {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75%
+    {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to
+    {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+
+/*
+    دوران رأسي
+*/
+.Rotate
+{
+    animation: Rotate 2s ease-in-out;
+}
+.RotateInfinite
+{
+    animation: Rotate 2s linear infinite;
+}
+@keyframes Rotate
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/*
+    دوران أفقي
+*/
+.Flip
+{
+    animation: Flip 1s ease-in-out;
+}
+.FlipInfinite
+{
+    animation: Flip 2s linear infinite;
+}
+@keyframes Flip
+{
+    from
+    {
+        transform: rotateY(0deg);
+    }
+    to
+    {
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+/*
+    قفز
+*/
+.Bounce
+{
+    animation: Bounce 1s ease-in-out;
+}
+.BounceInfinite
+{
+    animation: Bounce 2s linear infinite;
+}
+@keyframes Bounce
+{
+    0%, 20%, 50%, 80%, 100%
+    {
+        transform: translateY(0);
+    }
+    40%
+    {
+        transform: translateY(-25px);
+    }
+    60%
+    {
+        transform: translateY(-15px);
+    }
+}
+
+
+
+/*
+    اهتزاز
+*/
+.Shake
+{
+    animation: Shake 0.5s ease-in-out;
+}
+.ShakeInfinite
+{
+    animation: Shake 0.5s linear infinite;
+}
+@keyframes Shake
+{
+    0%
+    {
+        transform: translateX(0);
+    }
+    25%
+    {
+        transform: translateX(-10px);
+    }
+    50%
+    {
+        transform: translateX(10px);
+    }
+    75%
+    {
+        transform: translateX(-10px);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+/* ---------------------------------------------------------------- {{{ Shake }}} <<<  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- {{{ Zoom }}} <<<  */
+/*
+    ارتداد عند الدخول
+*/
+.BounceIn
+{
+    animation: BounceIn 0.8s ease-out;
+}
+.BounceInInfinite
+{
+    animation: BounceIn 0.8s infinite;
+}
+@keyframes BounceIn 
+{
+    0%
+    {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60%
+    {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100%
+    {
+      transform: scale(1);
+    }
+}
+
+
+
+/*
+    تكبير
+*/
+.ZoomIn
+{
+    animation: ZoomIn 1s ease-out;
+}
+.ZoomInInfinite
+{
+    animation: ZoomIn 1s linear infinite;
+}
+@keyframes zoomIn
+{
+    from
+    {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* ---------------------------------------------------------------- {{{ Zoom }}} <<<  */
+
+
+
+/* ---------------------------------------------------------------- {{{ Filter }}} <<<  */
+/*
+    شفافية إلى وضوح
+*/
+.Opacity
+{
+    animation: Opacity 2s ease-in-out;
+}
+.OpacityInfinite
+{
+    animation: Opacity 2s linear infinite;
+}
+@keyframes Opacity
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+
+
+/*
+    شفافية إلى وضوح خاطفة
+*/
+.Flash
+{
+    animation: f 2s linear ease-in-out;
+}
+.FlashInfinite
+{
+    animation: f 2s linear infinite;
+}
+@keyframes Flash {
+    from, 50%, to
+    {
+        opacity: 1;
+    }
+
+    25%, 75%
+    {
+        opacity: 0;
+    }
+}
+/* ---------------------------------------------------------------- {{{ Filter }}} <<<  */
+/* ==============================================>>> {{{ التحريك }}} <<<==================================== */

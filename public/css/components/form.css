@@ -1,0 +1,24 @@
+/* ---------------------------------------------------------------- {{{ Form-1 => 1-2 }}} <<< */
+.form-1
+{
+    gap: 2rem;
+
+
+
+    .container-form
+    {
+        gap: 2rem;
+        width: 100%;
+    }
+    .container-form:first-child
+    {
+        flex-direction: row;
+
+
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+}
+/* ---------------------------------------------------------------- {{{ Form-1 => 1-2 }}} <<< */
